@@ -74,6 +74,8 @@ project-base/
 
 5. Aponte seu servidor Apache para a pasta `public/`.
 
+6. Após clonar o projeto, execute composer install para gerar as dependências.
+
 ---
 
 ## Teste rápido
