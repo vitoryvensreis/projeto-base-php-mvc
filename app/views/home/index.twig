@@ -1,0 +1,21 @@
+{% extends "layout.twig" %}
+
+{% block title %}{{ titulo }}{% endblock %}
+
+{% block content %}
+    <h2>{{ titulo }}</h2>
+
+    <ul>
+        <li><strong>URL base:</strong> {{ base_url }}</li>
+        <li><strong>Versão do PHP:</strong> {{ status.php_version }}</li>
+        <li><strong>Conexão com Banco:</strong>
+            {% if status.conexao %}
+                ✅ Conectado com sucesso!
+                <br><strong>Data atual no banco:</strong> {{ status.data_banco }}
+            {% else %}
+                ❌ Erro na conexão:
+                <pre>{{ status.erro }}</pre>
+            {% endif %}
+        </li>
+    </ul>
+{% endblock %}

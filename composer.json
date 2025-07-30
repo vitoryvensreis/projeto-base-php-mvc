@@ -1,0 +1,21 @@
+{
+    "name": "vitor/project-base",
+    "description": "Projeto Base PHP/MVC",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vitor yvens",
+            "email": "vitoryvensreisdeoliveira@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.21",
+        "guzzlehttp/guzzle": "^7.9",
+        "phpmailer/phpmailer": "^6.10"
+    }
+}
